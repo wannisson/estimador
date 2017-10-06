@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="wannisson">
+        <createTable tableName="tb_pendencia">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="desc_pendencia" type="varchar(100)">
+                <constraints  nullable="false" />
+            </column>
+            <column name="texto_pendencia" type="varchar(255)">
+                <constraints  nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="3" author="wannisson">
+        <insert tableName="tb_pendencia">
+            <column name="id" value="1" />
+            <column name="desc_pendencia" value="Acesso ao Cobol não liberado" />
+            <column name="texto_pendencia" value="Acesso ao ambiente do Cobol está liberado apenas para um usuário, não possibilitando vários desenvolvimentos simultaneos." />
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>

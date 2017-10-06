@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+
+<html ng-app="easy-buying">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>Bradesco-UDI</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+
+
+    <!-- Animation Css -->
+    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <link href="plugins/waitme/waitMe.css" rel="stylesheet" />
+
+    <!-- Bootstrap Select Css -->
+    <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Sweet Alert Css -->
+    <link href="plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+
+
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="css/themes/all-themes.css" rel="stylesheet" />
+
+    <!--link rel="stylesheet" href="css/font-awesome.min.css"-->
+    <!--link rel="stylesheet" href="css/ng-notify.min.css"-->
+
+    <!-- Morris Chart Css-->
+    <!--link href="plugins/morrisjs/morris.css" rel="stylesheet" /-->
+
+
+    <!--link href="plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet" /-->
+
+</head>
+
+<body class="theme-red">
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+        <div class="preloader">
+            <div class="spinner-layer pl-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <p>Por favor, espere...</p>
+    </div>
+</div>
+<!-- #END# Page Loader -->
+<!-- Overlay For Sidebars -->
+<div class="overlay"></div>
+<!-- #END# Overlay For Sidebars -->
+<!-- Search Bar -->
+<div class="search-bar">
+    <div class="search-icon">
+        <i class="material-icons">search</i>
+    </div>
+    <input type="text" placeholder="O que deseja....">
+    <div class="close-search">
+        <i class="material-icons">close</i>
+    </div>
+</div>
+<!-- #END# Search Bar -->
+<!-- Top Bar -->
+
+    <nav ng-include="'src/main/header.html'" class="navbar"></nav>
+<!-- #Top Bar -->
+    <section  ng-controller="headerSrv"  ng-include="'src/main/menu.html'">
+        <!-- Left Sidebar -->
+
+
+    </section>
+
+    <section class="content">
+        <ng-view />
+    </section>
+
+
+
+<script src="js/angular.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/angular-cookies.min.js"></script>
+<script src="js/ngStorage.min.js"></script>
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.js"></script>
+<script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+<script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+<script src="plugins/jquery-validation/jquery.validate.js"></script>
+<script src="plugins/jquery-steps/jquery.steps.js"></script>
+<script src="plugins/sweetalert/sweetalert.min.js"></script>
+
+<script src="plugins/node-waves/waves.js"></script>
+<script src="plugins/waitme/waitMe.js"></script>
+<script src="plugins/jquery-countto/jquery.countTo.js"></script>
+<script src="plugins/raphael/raphael.min.js"></script>
+<script src="plugins/morrisjs/morris.js"></script>
+<script src="plugins/chartjs/Chart.bundle.js"></script>
+<script src="plugins/flot-charts/jquery.flot.js"></script>
+<script src="plugins/flot-charts/jquery.flot.resize.js"></script>
+<script src="plugins/flot-charts/jquery.flot.pie.js"></script>
+<script src="plugins/flot-charts/jquery.flot.categories.js"></script>
+<script src="plugins/flot-charts/jquery.flot.time.js"></script>
+<script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+<script src="plugins/jquery-datatable/jquery.dataTables.js"></script>
+<script src="plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+<script src="plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+<script src="js/admin.js"></script>
+<script src="js/pages/examples/sign-in.js"></script>
+<script src="js/pages/examples/sign-up.js"></script>
+<script src="js/pages/cards/basic.js"></script>
+<script src="js/pages/index.js"></script>
+<script src="js/pages/forms/form-validation.js"></script>
+<script src="js/pages/tables/jquery-datatable.js"></script>
+<script src="js/demo.js"></script>
+<script src="js/skel.min.js"></script>
+<script src="js/util.js"></script>
+<!--script src="js/ie/html5shiv.js"></script-->
+<script src="js/ie/respond.min.js"></script>
+
+
+<!-- https://github.com/vitalets/checklist-model -->
+<!-- http://vitalets.github.io/checklist-model/ -->
+<script src="js/checklist-model.js"></script>
+
+<!-- https://github.com/matowens/ng-notify -->
+<!-- http://matowens.github.io/ng-notify/ -->
+<script src="js/ng-notify.min.js"></script> <!--  -->
+
+
+<!-- inject:js -->
+<script src="src/index.js"></script>
+<script src="src/home/home.js"></script>
+<script src="src/login/login.js"></script>
+<script src="src/login/login.logout.service.js"></script>
+<script src="src/main/header.js"></script>
+<script src="src/main/main.js"></script>
+<script src="src/packagee/packagee.js"></script>
+<script src="src/user/user.js"></script>
+<script src="src/utils/interceptor.js"></script>
+<script src="src/utils/util.filter.js"></script>
+<script src="src/utils/util.service.js"></script>
+<!-- endinject -->
+</body>
+</html>

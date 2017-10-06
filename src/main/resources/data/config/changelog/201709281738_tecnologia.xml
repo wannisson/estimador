@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="wannisson">
+        <createTable tableName="tb_tecnologia">
+            <column name="id" type="bigint(20)" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+
+            <column name="desc_tecnologia" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="sigla" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="wannisson">
+        <insert tableName="tb_tecnologia">
+            <column name="id" value="1" />
+            <column name="desc_tecnologia" value="JAVA" />
+            <column name="sigla" value="JV" />
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

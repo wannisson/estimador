@@ -1,0 +1,65 @@
+package br.com.gerencial.project.utils;
+
+public final class ResourcePaths {
+	
+
+	///////////////////////////////////////////////////////////////
+	// ROOT PATH
+	///////////////////////////////////////////////////////////////
+
+	public static final String ALL = "/**";
+	
+    public static final String ROOT_PATH = "/api";
+    
+    public static final String PUBLIC_ROOT_PATH = ROOT_PATH + "/public";
+    
+    public static final String PRIVATE_ROOT_PATH = ROOT_PATH + "/private";
+    
+    ///////////////////////////////////////////////////////////////
+    // PRIVATE PATHS
+    ///////////////////////////////////////////////////////////////
+
+
+    public static final String USER_PATH =  PRIVATE_ROOT_PATH + "/user";
+    
+    public static final String PERMISSION_PATH = PRIVATE_ROOT_PATH + "/permission";
+
+    public static final String PACKAGEE_PATH = PRIVATE_ROOT_PATH + "/packagee";
+
+    ///////////////////////////////////////////////////////////////
+    // PRIVATE TECNOLOGIA
+    ///////////////////////////////////////////////////////////////
+
+    public static final String TECNOLOGIA_PATH =  PRIVATE_ROOT_PATH + "/tecnologia";
+
+
+    ///////////////////////////////////////////////////////////////
+    // PRIVATE PENDENCIA
+    ///////////////////////////////////////////////////////////////
+
+    public static final String PENDENCIA_PATH =  PRIVATE_ROOT_PATH + "/pendencia";
+
+    ///////////////////////////////////////////////////////////////
+    // PRIVATE PREMISSA
+    ///////////////////////////////////////////////////////////////
+
+    public static final String PREMISSA_PATH =  PRIVATE_ROOT_PATH + "/premissa";
+
+    ///////////////////////////////////////////////////////////////
+    // PRIVATE RISCO
+    ///////////////////////////////////////////////////////////////
+
+    public static final String RISCO_PATH =  PRIVATE_ROOT_PATH + "/risco";
+
+
+    ///////////////////////////////////////////////////////////////
+    // PUBLIC PATHS
+    ///////////////////////////////////////////////////////////////
+
+    public static final String LOGIN_PATH = PUBLIC_ROOT_PATH + "/login";
+
+    public static final String LOGOUT_PATH = PUBLIC_ROOT_PATH + "/logout";
+
+    private ResourcePaths() {}
+
+}

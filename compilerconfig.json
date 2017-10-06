@@ -1,0 +1,86 @@
+[
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/all-themes.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/_all-themes.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-red.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-red.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-amber.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-amber.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-black.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-black.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-blue-grey.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-blue-grey.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-blue.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-blue.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-brown.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-brown.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-cyan.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-cyan.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-deep-orange.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-deep-orange.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-deep-purple.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-deep-purple.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-green.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-green.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-grey.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-grey.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-indigo.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-indigo.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-light-blue.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-light-blue.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-lime.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-lime.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-orange.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-orange.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-pink.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-pink.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-purple.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-purple.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-teal.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-teal.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/themes/theme-yellow.css",
+    "inputFile": "src/main/webapp/resources/scss/themes/theme-yellow.scss"
+  },
+  {
+    "outputFile": "src/main/webapp/resources/css/style.css",
+    "inputFile": "src/main/webapp/resources/scss/style.scss"
+  }
+]

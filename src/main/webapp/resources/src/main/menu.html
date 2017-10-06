@@ -1,0 +1,119 @@
+<!-- User Info -->
+<aside id="leftsidebar" class="sidebar" ng-show="authDetails.authenticated">
+<div class="user-info">
+  <div class="image">
+    <img src="http://localhost:9090/resources/images/user.png" width="48" height="48" alt="user" />
+  </div>
+  <div class="info-container">
+    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administrador</div>
+    <div class="email">admin@admin.com</div>
+    <div class="btn-group user-helper-dropdown">
+      <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+      <ul class="dropdown-menu pull-right">
+        <li><a href="javascript:void(0);"><i class="material-icons">person</i>Perfil</a></li>
+        <li role="seperator" class="divider"></li>
+        <li><a href="javascript:void(0);"><i class="material-icons">group</i>Seguidores</a></li>
+        <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Favoritos</a></li>
+        <li role="seperator" class="divider"></li>
+        <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sair</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<!-- #User Info -->
+<!-- Menu -->
+<div class="menu">
+  <ul class="list">
+    <li class="header">MENU</li>
+    <li class="active">
+      <a href="#/">
+        <i class="material-icons">home</i>
+        <span>Home</span>
+      </a>
+    </li>
+    <li style="display:none;">
+      <a href="\meuspedidos">
+        <i class="material-icons">notifications_active</i>
+        <span>Minhas Atividades</span>
+      </a>
+    </li>
+    <li style="display:none;">
+      <a href="#/user">
+        <i class="material-icons">person</i>
+        <span>Funcionarios</span>
+      </a>
+    </li>
+    <li>
+      <a href="#/estimador">
+        <i class="material-icons">poll</i>
+        <span>Estimador</span>
+      </a>
+    </li>
+    <li style="display:none;">
+      <a href="javascript:void(0);" class="menu-toggle">
+        <i class="material-icons">assignment</i>
+        <span>Ferramentas</span>
+      </a>
+      <ul class="ml-menu">
+        <li>
+          <a href="#/">Estimador</a>
+        </li>
+        <li>
+          <a href="#/">PWC Validator</a>
+        </li>
+        <li>
+          <a href="#/">Extract-Query</a>
+        </li>
+        <li>
+          <a href="#/">Extract-Rel</a>
+        </li>
+        <li>
+          <a href="#/">Rel5</a>
+        </li>
+        <li>
+          <a href="#/">Rel6</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="\">
+        <i class="material-icons">layers</i>
+        <span>Ajuda</span>
+      </a>
+    </li>
+  </ul>
+
+</div>
+</aside>
+<!-- #END# Left Sidebar -->
+<!-- Right Sidebar -->
+<!--aside id="rightsidebar" class="right-sidebar">
+  <ul class="nav nav-tabs tab-nav-right" role="tablist">
+    <li role="presentation" class="active"><a href="" </li>
+  </ul>
+</aside-->
+
+<!--
+<section>
+  <ul class="actions vertical">
+    <li ng-show="!authDetails.authenticated"><a href="#/login" class="button big fit">Login</a></li>
+    <li ng-show="authDetails.authenticated"><a ng-click="logout()" href="#/" class="button big fit">Logout</a></li>
+  </ul>
+</section>
+
+<ul class="links">
+  <li ng-show="hasAnyPermission(['ROLE_ADMIN', 'ROLE_USER'])">
+    <a href="#/packagee">
+      <h3>Packages</h3>
+      <p>List of packages.</p>
+    </a>
+  </li>
+  <li ng-show="hasAnyPermission(['ROLE_ADMIN'])">
+    <a href="#/user">
+      <h3>Users</h3>
+      <p>Users of the system.</p>
+    </a>
+  </li>
+</ul>
+-->

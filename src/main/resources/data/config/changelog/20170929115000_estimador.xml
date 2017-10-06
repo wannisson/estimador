@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="wannisson">
+        <createTable tableName="tb_estimador">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" />
+        </column>
+    <column name="id_tecnologia" type="bigint">
+        <constraints  nullable="false" />
+    </column>
+    <column name="tipo_de_programa" type="VARCHAR(255)">
+        <constraints  nullable="false" />
+    </column>
+    <column name="programacao" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="teste_unitario" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="massa_de_dados" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="incidencia_interna" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="peer_review" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="ptd_elaboracao" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="execucao_testes" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="execucao_testes_estaticos" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="evidencias_ptd" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="reteste" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="testes_por_campos" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="casos_de_testes_extras" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="documentacao" type="VARCHAR(5)">
+        <constraints  nullable="true" />
+    </column>
+    <column name="fatorial_campos_aumento_qtd_1" type="BIGINT">
+        <constraints  nullable="true" />
+    </column>
+    <column name="fatorial_campos_aumento_perc_1" type="FLOAT">
+        <constraints  nullable="true" />
+    </column>
+    <column name="fatorial_campos_aumento_qtd_2" type="BIGINT">
+        <constraints  nullable="true" />
+    </column>
+    <column name="fatorial_campos_aumento_perc_2" type="FLOAT">
+        <constraints  nullable="true" />
+    </column>
+    <column name="fatorial_campos_aumento_qtd_3" type="BIGINT">
+        <constraints  nullable="true" />
+    </column>
+    <column name="fatorial_campos_aumento_perc_3" type="FLOAT">
+        <constraints  nullable="true" />
+    </column>
+    <column name="regras_complexas_qtd" type="BIGINT">
+        <constraints  nullable="true" />
+    </column>
+    <column name="regras_complexas_aumento_perc" type="FLOAT">
+        <constraints  nullable="true" />
+    </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="wannisson">
+        <addForeignKeyConstraint baseColumnNames="id_tecnologia"
+                                 baseTableName="tb_estimador" constraintName="fk_estimador_tecnologia"
+                                 deferrable="true" initiallyDeferred="true" onDelete="CASCADE"
+                                 onUpdate="RESTRICT" referencedColumnNames="id"
+                                 referencedTableName="tb_tecnologia" />
+    </changeSet>
+
+    <changeSet id="3" author="wannisson">
+        <insert tableName="tb_estimador">
+            <column name="id" value="1"/>
+            <column name="id_tecnologia" value="1"/>
+            <column name="tipo_de_programa" value="CBL Alteração Job (Modulo) Complexo"/>
+            <column name="programacao" value="5:00"/>
+            <column name="teste_unitario" value="2:00"/>
+            <column name="massa_de_dados" value="0:00"/>
+            <column name="incidencia_interna" value="1:00"/>
+            <column name="peer_review" value="0:30"/>
+            <column name="ptd_elaboracao" value="0:00"/>
+            <column name="execucao_testes" value="0:00"/>
+            <column name="execucao_testes_estaticos" value="0:00"/>
+            <column name="evidencias_ptd" value="1:00"/>
+            <column name="reteste" value="NULL"/>
+            <column name="testes_por_campos" value="0:10"/>
+            <column name="casos_de_testes_extras" value="0:30"/>
+            <column name="documentacao" value="1:00"/>
+            <column name="fatorial_campos_aumento_qtd_1" value="10"/>
+            <column name="fatorial_campos_aumento_perc_1" value="0"/>
+            <column name="fatorial_campos_aumento_qtd_2" value="40"/>
+            <column name="fatorial_campos_aumento_perc_2" value="0.5"/>
+            <column name="fatorial_campos_aumento_qtd_3" value="9999"/>
+            <column name="fatorial_campos_aumento_perc_3" value="1"/>
+            <column name="regras_complexas_qtd" value="1"/>
+            <column name="regras_complexas_aumento_perc" value="0.5" />
+        </insert>
+    </changeSet>
+</databaseChangeLog>
